@@ -1,0 +1,8 @@
+ED-Arch Validation Harness Report
+=================================
+
+Law-Surface Validation (Analytic)
+---------------------------------
+  Points sampled: 56
+  Max deviation:  0.0
+  All passed:     True

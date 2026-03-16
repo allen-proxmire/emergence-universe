@@ -1,0 +1,411 @@
+{
+  "records": [
+    {
+      "d": 20.0,
+      "ncl": 3,
+      "gamma": -1,
+      "chi_pred": 0.5080682368868706,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 30.0,
+      "ncl": 3,
+      "gamma": -1,
+      "chi_pred": 0.4503332099679081,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 40.0,
+      "ncl": 3,
+      "gamma": -1,
+      "chi_pred": 0.3925981830489455,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 50.0,
+      "ncl": 3,
+      "gamma": -1,
+      "chi_pred": 0.33486315612998296,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 60.0,
+      "ncl": 3,
+      "gamma": -1,
+      "chi_pred": 0.27712812921102037,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 20.0,
+      "ncl": 4,
+      "gamma": -1,
+      "chi_pred": 0.6222539674441618,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 30.0,
+      "ncl": 4,
+      "gamma": -1,
+      "chi_pred": 0.551543289325507,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 40.0,
+      "ncl": 4,
+      "gamma": -1,
+      "chi_pred": 0.4808326112068523,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 50.0,
+      "ncl": 4,
+      "gamma": -1,
+      "chi_pred": 0.41012193308819755,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 60.0,
+      "ncl": 4,
+      "gamma": -1,
+      "chi_pred": 0.3394112549695428,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 20.0,
+      "ncl": 5,
+      "gamma": -1,
+      "chi_pred": 0.7485727113497951,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 30.0,
+      "ncl": 5,
+      "gamma": -1,
+      "chi_pred": 0.6635076305145912,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 40.0,
+      "ncl": 5,
+      "gamma": -1,
+      "chi_pred": 0.5784425496793871,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 50.0,
+      "ncl": 5,
+      "gamma": -1,
+      "chi_pred": 0.49337746884418315,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 60.0,
+      "ncl": 5,
+      "gamma": -1,
+      "chi_pred": 0.4083123880089792,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 20.0,
+      "ncl": 6,
+      "gamma": -1,
+      "chi_pred": 0.8800000000000001,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 30.0,
+      "ncl": 6,
+      "gamma": -1,
+      "chi_pred": 0.7800000000000001,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 40.0,
+      "ncl": 6,
+      "gamma": -1,
+      "chi_pred": 0.68,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 50.0,
+      "ncl": 6,
+      "gamma": -1,
+      "chi_pred": 0.5800000000000001,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 60.0,
+      "ncl": 6,
+      "gamma": -1,
+      "chi_pred": 0.4800000000000001,
+      "mechanism_pred": "outward-PBC"
+    },
+    {
+      "d": 20.0,
+      "ncl": 3,
+      "gamma": 0,
+      "chi_pred": -0.0202072594216369,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 3,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 40.0,
+      "ncl": 3,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 50.0,
+      "ncl": 3,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 60.0,
+      "ncl": 3,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 20.0,
+      "ncl": 4,
+      "gamma": 0,
+      "chi_pred": -0.024748737341529162,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 4,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 40.0,
+      "ncl": 4,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 50.0,
+      "ncl": 4,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 60.0,
+      "ncl": 4,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 20.0,
+      "ncl": 5,
+      "gamma": 0,
+      "chi_pred": -0.029772778292321396,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 5,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 40.0,
+      "ncl": 5,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 50.0,
+      "ncl": 5,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 60.0,
+      "ncl": 5,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 20.0,
+      "ncl": 6,
+      "gamma": 0,
+      "chi_pred": -0.035,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 6,
+      "gamma": 0,
+      "chi_pred": 0.06500000000000002,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 40.0,
+      "ncl": 6,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 50.0,
+      "ncl": 6,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 60.0,
+      "ncl": 6,
+      "gamma": 0,
+      "chi_pred": Infinity,
+      "mechanism_pred": "DECAY"
+    },
+    {
+      "d": 30.0,
+      "ncl": 3,
+      "gamma": 1,
+      "chi_pred": 0.03752776749732568,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 40.0,
+      "ncl": 3,
+      "gamma": 1,
+      "chi_pred": 0.09526279441628825,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 50.0,
+      "ncl": 3,
+      "gamma": 1,
+      "chi_pred": 0.15299782133525083,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 60.0,
+      "ncl": 3,
+      "gamma": 1,
+      "chi_pred": 0.2107328482542134,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 4,
+      "gamma": 1,
+      "chi_pred": 0.045961940777125586,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 40.0,
+      "ncl": 4,
+      "gamma": 1,
+      "chi_pred": 0.11667261889578033,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 50.0,
+      "ncl": 4,
+      "gamma": 1,
+      "chi_pred": 0.1873832970144351,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 60.0,
+      "ncl": 4,
+      "gamma": 1,
+      "chi_pred": 0.25809397513308985,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 5,
+      "gamma": 1,
+      "chi_pred": 0.055292302542882595,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 40.0,
+      "ncl": 5,
+      "gamma": 1,
+      "chi_pred": 0.1403573833780866,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 50.0,
+      "ncl": 5,
+      "gamma": 1,
+      "chi_pred": 0.22542246421329057,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 60.0,
+      "ncl": 5,
+      "gamma": 1,
+      "chi_pred": 0.3104875450484946,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 30.0,
+      "ncl": 6,
+      "gamma": 1,
+      "chi_pred": 0.06500000000000002,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 40.0,
+      "ncl": 6,
+      "gamma": 1,
+      "chi_pred": 0.16500000000000004,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 50.0,
+      "ncl": 6,
+      "gamma": 1,
+      "chi_pred": 0.265,
+      "mechanism_pred": "inward-collapse"
+    },
+    {
+      "d": 60.0,
+      "ncl": 6,
+      "gamma": 1,
+      "chi_pred": 0.36500000000000005,
+      "mechanism_pred": "inward-collapse"
+    }
+  ],
+  "max_deviation": 0.0,
+  "all_passed": true,
+  "ncl_range": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "d_range": [
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0
+  ]
+}

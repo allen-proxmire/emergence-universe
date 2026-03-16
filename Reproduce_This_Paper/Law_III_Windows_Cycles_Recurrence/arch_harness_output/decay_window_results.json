@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "ncl": 3,
+      "d_lower": 24.654700538379252,
+      "d_upper": 92.7820323027551
+    },
+    {
+      "ncl": 4,
+      "d_lower": 25.5,
+      "d_upper": Infinity
+    },
+    {
+      "ncl": 5,
+      "d_lower": 25.20130161670408,
+      "d_upper": 70.52282018339785
+    },
+    {
+      "ncl": 6,
+      "d_lower": 39.0,
+      "d_upper": 61.0
+    }
+  ],
+  "boundary_accuracy": 1.0,
+  "all_passed": true,
+  "ncl_range": [
+    3,
+    4,
+    5,
+    6
+  ]
+}

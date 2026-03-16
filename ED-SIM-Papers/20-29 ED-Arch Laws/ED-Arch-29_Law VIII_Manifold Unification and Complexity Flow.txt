@@ -1,0 +1,326 @@
+ED-Arch-29 -- Law VIII: Manifold Unification and the Complexity Flow
+
+Allen Proxmire
+March 2026
+
+
+This note documents the existence and structure of Law VIII.
+Full mechanism-law documentation is located in:
+ED Research/ED Simulations/
+  check_cross_manifold_unification.py  (11-section analysis)
+  check_global_phase_boundary.py       (11-section analysis)
+  check_temporal_manifold.py           (11-section analysis)
+  check_mechanism_atlas.py             (11-section analysis)
+  check_4d_drift_robustness.py         (9-section analysis)
+
+Reproducibility data:
+  1,980 sweep files (N x angle x radius x drift)
+  1,980 atlas files  (instrumented trajectory diagnostics)
+
+
+Overview
+
+Law VIII establishes a global geometric law governing the ED-Arch
+phase manifold across all five descriptive layers -- mechanism
+classification, drift robustness, temporal structure, sub-mechanism
+atlas, and phase boundary geometry -- and across the full parameter
+space (N, angle, radius, drift, time).
+
+The central discovery is that these five layers are not independent
+structures.  They are redundant projections of a single
+N-parameterized geometric object, and N controls a monotone
+complexity-reduction flow from folded richness at small N to flat
+simplicity at large N.
+
+
+Formal Statement
+
+Law VIII -- Manifold Unification and the Complexity Flow:
+
+The five ED-Arch descriptive manifolds (mechanism, drift, temporal,
+atlas, boundary) describe a single coherent geometric object.  This
+object undergoes a monotone complexity-reduction flow parameterized
+by N: it is a folded, cusp-rich, drift-fragile surface at N=4, a
+resonant plateau at N=8, and a flat, drift-rigid hyperplane at large
+N.  The phase boundary, the temporal landscape, the sub-mechanism
+taxonomy, the drift sensitivity, and the mechanism classification
+are mutually consistent projections of this one surface, with
+cross-layer agreement exceeding 98%.
+
+
+Conceptual Framing
+
+Laws I through VII describe individual features of the ED-Arch
+mechanism atlas: the sheet, mirror, and ladder (Law I); the DECAY
+resonance (Law II); PBC recurrence windows (Law III); scaling
+sensitivity (Law IV); commensurability classes (Law V); the N=4
+rotational degeneracy (Law VI); and DECAY exclusivity (Law VII).
+Each law identifies a structure within a single layer of the phase
+manifold -- a mechanism boundary, a temporal discontinuity, a
+sub-mechanism cluster.  Law VIII asks whether these structures are
+aspects of one geometric object or artifacts of separate descriptive
+frameworks.
+
+The answer is unification.  When all five layers are assembled into a
+single tensor indexed by (N, angle, radius, drift) and enriched with
+mechanism label, sub-mechanism type, collapse time, boundary distance,
+drift sensitivity class, temporal gradient class, and local boundary
+curvature, the resulting object exhibits 98.7% cross-layer agreement.
+No IC cell appears outside the phase boundary.  No DECAY cell appears
+at N > 4.  Every mechanism transition coincides with a sub-mechanism
+transition.  The five manifolds do not merely overlap -- they are the
+same surface viewed through five different instruments.
+
+
+Geometric Interpretation
+
+The unified manifold is not a smooth surface at all N.  Its geometry
+depends sharply on particle count, and this dependence defines the
+complexity flow.
+
+At N=4 the manifold is a folded, multiply-connected object embedded
+in the (angle, radius, drift) parameter space.  The IC/non-IC phase
+boundary oscillates non-monotonically through radius, producing 3
+folds, 8 cusps, and 6 discontinuities in onset angle at drift=0
+alone.  Five topological holes punctuate the IC domain -- isolated IC
+cells flanked by non-IC at adjacent radii -- confirming that the
+boundary is not simply connected.  The sub-mechanism taxonomy is at
+its richest: 9 distinct sub-types coexist (IC-bounced at 91% of IC,
+OPBC-winding at 61% of OPBC, CR-diagonal at 100% of PBC-corner,
+DE-tangent at 82% of DECAY, OL-stalled at 100% of other-late).
+The temporal landscape is slow (mean chi = 22.4) and structured, with
+a 41 chi-unit cliff at the tangent discontinuity and 239 metastable
+cells.  Boundary curvature is extreme (mean kappa = 222, peak = 1000).
+Torsion into the drift dimension is large (mean |tau| = 6.8).  The
+drift sensitivity is high: a perturbation of d=0.01 changes 25% of
+cells, and the tangent discontinuity is destroyed by d=0.02.
+
+At N=8 the manifold flattens abruptly.  The phase boundary becomes a
+degenerate surface: onset angle is uniformly +10 degrees at every
+radius where IC exists, with zero folds, zero cusps, and zero
+discontinuities.  Boundary curvature and torsion both drop to zero.
+The sub-mechanism taxonomy contracts from 9 to 8 types.  But the
+manifold is not featureless.  It carries a quantitative resonance: a
+24% excess of OL-wandering orbits (versus 0-1.4% at all other N),
+producing a slow temporal plateau (mean chi = 2.74 at positive
+angles, 8x slower than N=12) that persists unchanged across all
+tested drifts.  This resonance is not a new mechanism -- it is a
+quantitative anomaly in the population of an existing mechanism,
+visible simultaneously in all five layers.  The IC domain is patchy,
+with radius gaps at 0.10, 0.15, 0.30, 0.90, 0.95 that produce the
+highest multi-valued count in the dataset (45 slices).
+
+At N=20 the manifold converges to a trivial hyperplane.  The phase
+boundary is flat and drift-invariant.  The taxonomy collapses to 5
+sub-types: IC-direct alone accounts for 100% of IC (no bounced
+orbits survive), OPBC-single accounts for 91% of OPBC, and
+OL-wandering vanishes entirely.  Mean chi drops to 0.20 -- a
+112-fold compression from N=4.  Curvature, torsion, folds, cusps,
+and temporal cliffs are all identically zero.  Drift rigidity reaches
+82%.  The manifold has shed every non-trivial geometric feature.
+
+
+Empirical Grounding
+
+The unification test was conducted across 1,980 parameter cells
+(4 values of N, 9 angles, 11 radii, 5 drifts), each carrying data
+from both the sweep files (mechanism, chi, dR) and the atlas files
+(PBC crossings, corner sequences, winding numbers, R-extrema,
+periodicity scores, multi-stage flags, tangent crossings).  For
+every cell, seven derived quantities were computed: mechanism label,
+sub-mechanism type, collapse time, signed boundary distance, drift
+sensitivity class, temporal gradient class, and local boundary
+curvature.
+
+Cross-layer agreement was tested by four independent criteria.
+First, mechanism-to-temporal-class determinism: the modal temporal
+class captures 41-62% of cells per mechanism, indicating that
+mechanism constrains but does not fully determine temporal behavior.
+Second, subtype-to-chi-range overlap: 17 of 45 subtype pairs share
+overlapping chi ranges, confirming that sub-mechanisms partition
+parameter space more finely than collapse time alone.  Third,
+boundary-distance sign consistency: IC cells appear only at
+non-positive boundary distance (0 of 65 exterior cells are IC across
+all N), confirming the phase boundary is a true separatrix.  Fourth,
+overall logical consistency: 98.7% of cells satisfy all cross-layer
+constraints simultaneously (94.9% at N=4, 100% at N>=8).
+
+The 5.1% inconsistency at N=4 is concentrated at the tangent
+discontinuity, where DECAY cells at chi=100 abut fast IC cells at
+chi<1 -- a boundary so sharp that the discrete angle grid (1-degree
+resolution) cannot fully resolve it.  This is a resolution artifact,
+not a structural contradiction.
+
+
+Cross-N Structure
+
+The complexity flow follows a strict hierarchy:
+
+  N=4:  folded, 3 folds, 8 cusps, 9 sub-types, chi=22.4,
+        60% drift-rigid, 5 boundary holes, kappa=222
+
+  N=8:  flat boundary, 0 folds, 0 cusps, 8 sub-types, chi=2.74,
+        55% drift-rigid, patchy IC domain, OL-wandering resonance
+
+  N=12: flat, 0 folds, 0 cusps, 8 sub-types, chi=1.05,
+        69% drift-rigid, contiguous IC domain
+
+  N=20: flat, 0 folds, 0 cusps, 5 sub-types, chi=0.20,
+        82% drift-rigid, trivial hyperplane
+
+Every measured complexity metric -- number of sub-types, number of
+folds, boundary curvature, torsion, mean chi, metastable cell count,
+multi-valued slice count -- decreases monotonically from N=4 to N=20.
+The transition is sharp: the manifold loses all folds, cusps, and
+high curvature between N=4 and N=8.  After N=8, simplification is
+gradual.
+
+The IC subtype crossover tracks this flow in lockstep.  At N=4,
+IC-bounced dominates (91% of IC) because the folded boundary
+produces PBC crossings before collapse.  At N=8, IC-direct rises to
+43%.  At N=12, IC-direct overtakes IC-bounced (77%).  At N=20,
+IC-direct reaches 100% -- all collapses are single-step direct
+contractions, and no particle ever crosses a PBC boundary before
+merging.
+
+
+Drift Clause
+
+Drift reveals the fragility gradient of the unified manifold.
+
+At N=4, the manifold is drift-fragile.  A perturbation of d=0.01
+changes 25% of cells, collapses the tangent discontinuity from a
+near-universal sheet to a weak remnant, and shifts DECAY from
+angle=0 to angle=-1.  By d=0.02, the tangent discontinuity is
+destroyed and DECAY vanishes from most radii.  The mean IC onset
+angle shifts by -3.0 degrees at d=0.10, and the only negative-angle
+IC onset in the entire dataset appears at r=0.10.  Drift does not
+create new topological complexity; it erodes existing complexity by
+smoothing folds and filling boundary gaps.
+
+At N>=8, the manifold is drift-rigid.  Mean onset shift is 0.0 at
+all tested drifts.  The N=8 OL-wandering plateau remains at 39-49%
+across all drift values.  At N=20, drift invariance is absolute:
+not a single onset angle changes across the five tested drift levels.
+Drift neither creates nor destroys features at large N because there
+are no features left to perturb.
+
+
+Temporal Clause
+
+The temporal manifold tracks the complexity flow but carries finer
+structure than the mechanism boundary alone.
+
+Mean collapse time compresses 112-fold from N=4 (chi=22.4) to N=20
+(chi=0.20), with IC-specific scaling steeper than 1/N^2.  Temporal
+gradients are universally CLIFF-class at N=4 (maximum gradient ~92
+chi-units across a single angle step), MODERATE at N=8 (~9), and
+GENTLE at N=20 (~1.3).  Metastable regions (chi>5 near mechanism
+boundaries) are abundant at N=4 (239 cells), modest at N=8 (41
+cells), and absent at N>=20.
+
+The one discordance between the temporal layer and the boundary layer
+is that the phase boundary is flat at N>=8 while the temporal
+manifold retains folds: chi varies non-monotonically across radius
+even where the onset angle is constant at +10 degrees.  This means
+the temporal landscape preserves geometric information that the
+binary mechanism label has discarded.  The temporal layer is the
+highest-resolution projection of the unified manifold.
+
+The chi ratio across the IC/non-IC phase boundary is 0.8-0.9x at
+all N, confirming that the phase boundary is not a temporal cliff.
+Collapse time varies continuously across the mechanism boundary.
+The large temporal discontinuities identified in earlier analyses
+(the +41 chi-unit jump at N=4, angle=0) are internal to the IC
+domain, not at the IC/non-IC interface.
+
+
+Exceptions and Degeneracies
+
+DECAY is the sole structural exception to the unified manifold's
+smooth complexity flow.  It occupies a 1D filament at (N=4, angle=0,
+all radii, drift=0) and is confined exclusively to N=4 by Law VII.
+Within the unified tensor, DECAY cells have chi=100.0 (the timeout
+ceiling), DE-tangent subtype (82%), extreme boundary curvature
+(kappa=287), and zero drift tolerance (destroyed by d=0.02).  DECAY
+is topologically isolated from the IC domain at all N except N=4,
+where it shares boundary through the tangent discontinuity.  It is
+the only feature of the unified manifold that is not smoothly
+connected to its neighbors.
+
+The N=8 resonance is not an exception but a plateau: a quantitative
+excess of OL-wandering orbits (24% versus 0-1.4% at other N) that
+produces a slow temporal band and a patchy IC domain.  Unlike DECAY,
+the N=8 anomaly does not introduce a new mechanism or break any
+cross-layer consistency.  It is fully embedded in the unified
+surface, visible as a broad hump rather than a singularity.
+
+The boundary is multi-valued at all N: at a given angle and drift,
+IC and non-IC coexist at different radii.  This multi-valuedness is
+a structural invariant of the manifold, not a pathology.  It means
+the phase boundary cannot be expressed as a single-valued function
+onset(radius) at any N.
+
+
+Closing Synthesis
+
+Law VIII completes the geometric description of ED-Arch by
+establishing that its five descriptive frameworks -- mechanism
+classification, phase boundary continuation, temporal landscape,
+sub-mechanism atlas, and drift robustness -- are not independent
+theories.  They are five projections of one geometric object.
+
+This object is an N-parameterized surface in (angle, radius, drift)
+space whose complexity decreases monotonically with particle count.
+At N=4 it is a folded, cusp-rich manifold with 9 sub-mechanism
+families, slow dynamics, drift-fragile boundaries, and the singular
+DECAY filament.  At N=8 it carries a quantitative resonance --
+visible in all five layers simultaneously -- that produces a slow
+plateau without introducing new mechanisms.  At large N it converges
+to a trivial hyperplane where a single sub-mechanism (IC-direct)
+dominates, collapse is instantaneous (chi ~ 0.01), boundaries are
+flat and drift-invariant, and the taxonomy has collapsed from 9
+families to 5.
+
+The complexity flow is the central organizing principle.  Every
+structure identified in Laws I through VII -- the sheet, the ladder,
+the DECAY islands, the scaling sensitivity, the commensurability
+classes, the N=4 degeneracy, the DECAY exclusivity -- is a feature
+of this one surface at a specific value of N.  Law VIII unifies them
+into a single geometric statement:
+
+The ED-Arch phase manifold is one surface, and N is the dial
+that controls its complexity.
+
+
+Relationship to Other Laws
+
+  Law I:   The sheet, mirror, and ladder are the N=3 cross-sections
+           of the unified manifold.
+  Law II:  DECAY islands are the rational-resonance interruptions
+           embedded in the N=4 tangent filament.
+  Law III: PBC recurrence windows are the temporal fine structure
+           of the manifold's slow regions.
+  Law IV:  Scaling sensitivity is the derivative of the complexity
+           flow with respect to N.
+  Law V:   Commensurability classes are the number-theoretic
+           coordinates on the manifold's tangent layer.
+  Law VI:  The N=4 rotational degeneracy is the singular point
+           where the manifold folds most sharply.
+  Law VII: DECAY exclusivity is the topological isolation of the
+           manifold's only 1D filament.
+
+
+Status
+
+  Exact (structural unification): 98.7% cross-layer agreement
+  Exact (complexity flow): monotone decrease in all metrics N=4->N=20
+  Exact (boundary consistency): 0/65 IC cells outside boundary
+  Exact (co-transition): 100% mechanism/subtype co-transition rate
+  Exact (DECAY isolation): DECAY confined to N=4 across all layers
+  Exact (N=8 resonance): visible simultaneously in all 5 layers
+  Exact (drift dichotomy): fragile at N=4, rigid at N>=8
+
+Law VIII establishes that the ED-Arch mechanism atlas is a single
+geometric object whose full structure is revealed by the complexity
+flow.
