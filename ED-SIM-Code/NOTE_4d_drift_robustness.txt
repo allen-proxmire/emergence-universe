@@ -1,0 +1,34 @@
+NOTE -- 4D Drift-Robustness Experiment (N x angle x radius x drift)
+=====================================================================
+Date: 2026-03-15
+Script: generate_4d_drift_sweeps.py (1,980 files, 270s)
+        check_4d_drift_robustness.py (9-section analysis)
+
+The tangent discontinuity is structurally fragile.  At drift=0 it forms
+a near-universal vertical sheet at N=4 (92% of radii show >10pp IC
+jump from 0 to +1 degree) and a partial sheet at N=20 (68%), but even
+the smallest tested drift (d=0.01) collapses the sheet to WEAK or
+DESTROYED at all N, with the jump surviving at only 5/11 radii for N=4
+and 1/11 for the others.  By d=0.02 the discontinuity is effectively
+gone everywhere.  DECAY, which occupied a 1D filament at (N=4, angle=0)
+under zero drift, loses most of its extent at d=0.01 (4/11 radii) and
+vanishes entirely at d=0.02.  A surprising finding is that drift
+creates new DECAY cells at negative angles: at d=0.01-0.02, DECAY
+appears at angle=-1 across multiple radii for N=4, indicating that
+inward drift can compensate outward gate components to produce
+near-tangent effective velocities.  The N=8 anomaly plateau is
+drift-stable: its footprint remains at 39-49% across all tested drift
+strengths, never dropping below the PLATEAU threshold.  By contrast,
+the large-N anomaly fraction at N=20 shrinks monotonically from 38%
+(d=0) to 12% (d=0.10), consistent with drift pushing the system toward
+cleaner IC dominance.  Drift sensitivity scales inversely with N at
+small perturbations: N=4 is SENSITIVE at d=0.01 (25% cells change),
+while N=8,12,20 remain STABLE (5-11%).  All N values become UNSTABLE
+by d=0.10.  The phase boundary shifts inward under drift -- at N=20
+the IC onset moves from [+1..+10] at d=0 to [-5..+5] at d=0.10,
+meaning drift pushes the collapse region into formerly OPBC-dominated
+territory.  IC fraction rises monotonically with drift at all N,
+reaching 75% at N=20/d=0.10 versus 32% at d=0.  The number of
+dominant mechanisms (4-5) and fold/cusp structure are largely
+drift-invariant; drift does not create new topological complexity but
+rather shifts the existing manifold toward collapse dominance.

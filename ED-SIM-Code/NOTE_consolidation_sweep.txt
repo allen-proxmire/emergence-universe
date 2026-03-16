@@ -1,0 +1,28 @@
+NOTE — Post-Law VIII Consolidation Sweep
+=========================================
+
+The consolidation sweep extends the canonical 4×9×11×5 parameter grid in three
+directions: higher N (24, 28, 32), finer angle resolution (0.25° steps near the
+tangent region), and finer drift resolution (0.005, 0.015, 0.025), producing
+7,260 new (sweep + atlas) cells for a total of 9,240.  The unified manifold
+remains single-sheeted at all seven N values: IC cells never appear outside
+the boundary, DECAY remains strictly N=4-exclusive, co-transition rate is 100%
+everywhere, and cross-layer agreement is 100% for every N≥8.  The complexity
+flow continues: mean chi compresses from 31.6 (N=4) to 0.01 (N=32)—a
+3,000-fold reduction—and the sub-mechanism count narrows from 9 (N=4) to a
+minimum of 5 at N=28 (IC-direct, OPBC-single, OL-stalled, OPBC-glancing,
+OPBC-winding).  No new sub-mechanisms appear at any high N; the only types lost
+above N=4 are DE-tangent and DE-frozen, confirming Law VII.
+
+Two minor wrinkles surface but do not compromise Law VIII.  First, N=24 shows a
+faint OL-wandering echo (3.2%, vs. 22.7% at N=8) that inflates its mean chi
+slightly above N=20; this trace vanishes by N=28.  Second, N=32 re-introduces
+IC-bounced (19%) and CR-diagonal (4%) as geometric consequences of the larger
+ring's circumradius-to-box ratio, ticking the sub-mechanism count from 5 back to
+6.  Neither deviation introduces new topology, breaks single-sheetedness, or
+creates a new resonance.  Finer angle resolution confirms that the DECAY filament
+resolves smoothly at sub-degree precision with no hidden cusps, and finer drift
+resolution confirms complete boundary rigidity at N≥8.  The temporal fold count
+drops to zero at N=32, where chi is uniformly at the floor.  Law VIII—that the
+five manifolds describe a single coherent geometric object undergoing a monotone
+complexity-reduction flow in N—is confirmed by the consolidation sweep.

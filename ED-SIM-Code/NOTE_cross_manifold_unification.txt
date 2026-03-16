@@ -1,0 +1,41 @@
+NOTE -- Cross-Manifold Unification Test (1,980 cells, 5 layers)
+=================================================================
+Date: 2026-03-15
+Script: check_cross_manifold_unification.py (11-section analysis)
+Data: 1,980 cells from 4D sweep + atlas files, unified into a
+      single tensor with 7 derived quantities per cell
+
+The five ED manifolds -- mechanism classification, drift robustness,
+temporal structure, sub-mechanism atlas, and global phase boundary --
+describe a single N-parameterized geometric object.  Cross-layer
+agreement is 98.7% overall (94.9% at N=4, 100% at N>=8), with zero
+contradictions detected: IC cells never appear outside the boundary
+(0/65 exterior cells are IC), DECAY is confined exclusively to N=4,
+and every mechanism transition coincides with a subtype transition
+(100% co-transition rate at all N).  The unified object's complexity
+decreases monotonically with N: at N=4 it is a folded surface (3
+boundary folds, 8 cusps, 9 subtypes, mean chi=22.4, 60% drift-rigid)
+that flattens at N>=8 to a simple surface (0 folds, 0 cusps, 5-8
+subtypes, mean chi 0.2-2.7, 55-82% drift-rigid).  The N=8 anomaly
+is visible in all five layers simultaneously -- 24% OL-wandering
+(vs 0-1.4% elsewhere), 45% no-boundary cells, 38% cliff-down temporal
+class, and a mean chi of 2.74 that is 8x slower than N=12 and 14x
+slower than N=20 -- confirming it as a single quantitative resonance
+embedded in the unified manifold rather than an artifact of any
+individual layer.  The IC subtype crossover from IC-bounced-dominant
+(91% at N=4) to IC-direct-dominant (100% at N=20) tracks the temporal
+compression (chi drops 112-fold), the boundary flattening (onset
+converges to +10 at all radii), and the drift rigidification (60% to
+82% rigid) in lockstep.  The only discordance is that the boundary is
+flat at N>=8 while the temporal manifold retains folds (chi varies
+non-monotonically across radius even where the onset angle is constant),
+indicating that the temporal layer carries finer structure than the
+mechanism boundary alone.  Sub-mechanisms cluster into three curvature
+regimes: high-curvature boundary-dwellers (IC-bounced, CR-diagonal,
+OPBC-winding; mean kappa 193-253), low-curvature interior types
+(IC-direct, OL-stalled; kappa~0), and the isolated DE-tangent filament
+(kappa=287, confined to N=4/angle=0).  The overall picture is that the
+ED phase manifold is a single coherent object whose five descriptive
+layers are redundant projections of one underlying geometric structure,
+with N controlling a smooth complexity-reduction flow from folded
+richness to flat simplicity.

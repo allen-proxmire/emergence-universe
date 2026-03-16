@@ -1,0 +1,12 @@
+{
+  "inward_N3":  {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 1.0000, "opbc_frac": 0.0000, "other_late_frac": 0.0000},
+  "inward_N4":  {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.7351, "opbc_frac": 0.2649, "other_late_frac": 0.0000},
+  "inward_N5":  {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.6753, "opbc_frac": 0.3247, "other_late_frac": 0.0000},
+  "inward_N6":  {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.6000, "opbc_frac": 0.4000, "other_late_frac": 0.0000},
+  "inward_N7":  {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.5948, "opbc_frac": 0.3688, "other_late_frac": 0.0364},
+  "outward_N3": {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.2571, "opbc_frac": 0.6883, "other_late_frac": 0.0545},
+  "outward_N4": {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.2675, "opbc_frac": 0.6753, "other_late_frac": 0.0571},
+  "outward_N5": {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.3636, "opbc_frac": 0.5792, "other_late_frac": 0.0571},
+  "outward_N6": {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.4026, "opbc_frac": 0.5403, "other_late_frac": 0.0571},
+  "outward_N7": {"decay_count": 0, "pbc_corner_count": 0, "ic_frac": 0.4468, "opbc_frac": 0.4961, "other_late_frac": 0.0571}
+}

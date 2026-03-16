@@ -1,0 +1,39 @@
+NOTE -- Mechanism Atlas: Sub-Mechanism Taxonomy (1,980 trajectories)
+=====================================================================
+Date: 2026-03-15
+Scripts: generate_atlas_sweeps.py (instrumented step-by-step simulation)
+         check_mechanism_atlas.py (11-section sub-mechanism analysis)
+
+The five canonical ED mechanisms resolve into exactly ten sub-mechanisms
+under trajectory instrumentation.  Inward-collapse splits into IC-direct
+(60%, single-step collapse at large N) and IC-bounced (40%, PBC
+crossings before collapse, dominant at N=4).  Outward-PBC contains three
+sub-types: OPBC-single (68%, no PBC crossings, edge collapse without
+wrapping), OPBC-glancing (15%, 1-5 crossings, single boundary pass),
+and OPBC-winding (18%, 6+ crossings, multi-wrap orbits with mean chi
+of 10.1).  PBC-corner is structurally monolithic: all 183 cells are
+CR-diagonal, approaching all four corners in the sequence [0,1,2,3];
+no single-corner or multi-corner variants exist.  Other-late splits
+into OL-stalled (61%, single-step catch-all) and OL-wandering (39%,
+extended orbits averaging 492 steps and chi=4.9), with zero periodic
+or multi-stage events detected across the entire dataset.  DECAY
+resolves into DE-tangent (82%, oscillating around the tangent line
+with mean 49 tangent crossings) and DE-frozen (18%, no tangent
+oscillation), both exclusive to N=4.
+
+The N=8 anomaly has a unique sub-mechanism fingerprint dominated by
+OL-wandering at 24% -- a +23.6 percentage-point excess over all other
+N values combined (0.5%).  These are extended orbits (mean 492 steps,
+9.2 PBC crossings, R-range 0.23) that do not appear at N=20 and
+constitute the mechanistic core of the N=8 plateau.  Large N collapses
+the taxonomy from 9 sub-mechanisms (N=4) through 8 (N=8,12) to just
+5 (N=20: IC-direct, OPBC-single, OL-stalled, OPBC-glancing,
+CR-diagonal).  At N=20, IC-direct alone accounts for 54% of all
+cells and IC-bounced vanishes entirely -- all collapses are direct.
+Six sub-mechanisms are universal across N (IC-direct, OL-stalled,
+OPBC-single, OPBC-glancing, OPBC-winding, CR-diagonal); two are
+N=4-exclusive (DE-tangent, DE-frozen).  Drift shifts the IC-bounced
+fraction downward at all N (from 94% at N=4/d=0 to 87% at d=0.10)
+but does not create or destroy sub-mechanism families.  The overall
+taxonomy is thus: 5 parents, 10 children, convergent to 3 families
+(direct-collapse, single-escape, catch-all) at large N.

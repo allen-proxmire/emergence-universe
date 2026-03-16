@@ -1,0 +1,17 @@
+{
+  "n4_tangent_ic_count": 0,
+  "n4_tangent_decay_count": 240,
+  "n4_tangent_decay_frac": 0.7742,
+  "n4_tangent_total": 310,
+  "n4_tangent_mechanism_dist": {
+    "DECAY": 240,
+    "outward-PBC": 33,
+    "other-late": 23,
+    "PBC-corner": 14,
+    "inward-collapse": 0
+  },
+  "n4_inward_ic_frac": 0.7351,
+  "n4_inward_decay_count": 0,
+  "n4_outward_ic_frac": 0.2675,
+  "n4_outward_decay_count": 0
+}

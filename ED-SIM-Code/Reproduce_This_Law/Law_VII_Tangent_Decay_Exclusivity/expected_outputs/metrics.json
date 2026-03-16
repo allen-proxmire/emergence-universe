@@ -1,0 +1,12 @@
+{
+  "nonzero_decay_cells": 1,
+  "singular_cell": ["tangent", 4],
+  "n4_tangent_decay_count": 240,
+  "n4_tangent_decay_frac": 0.7742,
+  "total_zero_decay_points": 5390,
+  "decay_counts": {
+    "inward_N3": 0,  "inward_N4": 0,  "inward_N5": 0,  "inward_N6": 0,  "inward_N7": 0,
+    "tangent_N3": 0, "tangent_N4": 240, "tangent_N5": 0, "tangent_N6": 0, "tangent_N7": 0,
+    "outward_N3": 0, "outward_N4": 0,  "outward_N5": 0, "outward_N6": 0, "outward_N7": 0
+  }
+}

@@ -1,0 +1,81 @@
+NOTE -- Global Phase Boundary (IC/non-IC surface across N x angle x radius x drift)
+====================================================================================
+Date: 2026-03-15
+Script: check_global_phase_boundary.py (11-section analysis)
+Data: 1,980 cells from 4D drift sweep files
+
+The IC/non-IC phase boundary is not a smooth manifold.  Its geometry
+depends sharply on N, transitioning from a multiply-folded, cusp-rich
+surface at N=4 to a degenerate flat boundary at N>=8.
+
+BOUNDARY TOPOLOGY BY N.  At N=4 (drift=0) the IC onset angle varies
+between +2 and +10 degrees across radius, producing a boundary with
+3 folds, 8 cusps (|d2a| >= 3), and 6 discontinuities (|da| >= 5 deg).
+The topology is FOLDED: the onset curve oscillates non-monotonically
+through radius space, dipping to +2 at r=0.10 then rising to +10 at
+r=0.20, falling again to +5 at r=0.40, and so on.  Five IC "holes"
+exist where an IC cell at a given radius is flanked by non-IC at both
+adjacent radii, confirming the boundary is NOT simply connected at N=4.
+At N>=8 the boundary collapses to a degenerate FLAT surface: the onset
+angle is uniformly +10 at every radius where IC exists, with zero folds,
+zero cusps, and zero discontinuities.  The boundary is perfectly smooth
+but trivial -- IC exists only at the most positive tested angle.
+
+IC FRACTION AND COVERAGE.  IC accounts for 36.4% of cells at N=4 and
+N=20, and 29.3-33.3% at N=8,12.  At N=4 all 11 tested radii contain
+both IC and non-IC cells (mixed boundary), whereas at N=8 five radii
+(0.10, 0.15, 0.30, 0.90, 0.95) contain no IC at all, creating radius
+gaps in the IC domain.  These gaps narrow with drift (d=0.10 fills in
+r=0.30 at N=8) but persist at the extreme radii.
+
+SUB-BOUNDARIES.  The mechanism that IC transitions into changes with N.
+At N=4 the dominant IC neighbor is outward-PBC (57% of transitions),
+with DECAY and PBC-corner each at 20%.  At N>=8 the dominant neighbor
+shifts to other-late (54-55% at N=8,20), with outward-PBC second at
+35%.  DECAY never borders IC at N>=8.  This confirms that the DECAY
+region is topologically isolated from IC at all N except N=4, where it
+shares boundary through the tangent discontinuity.
+
+MULTI-VALUED REGIONS.  The boundary is multi-valued at all N: at a
+given angle and drift, IC and non-IC coexist at different radii.  The
+count of multi-valued (angle, drift) slices is 27 at N=4, peaks at
+45 at N=8, and drops to 29 at N=20.  The N=8 peak reflects the patchy
+IC domain (IC at r=0.05 and r=0.40 but not r=0.10-0.15), confirming
+that the boundary surface cannot be expressed as a single-valued function
+onset(radius) at any N.
+
+DRIFT PERTURBATION.  Drift shifts the N=4 boundary downward: the mean
+onset shift is -1.3 deg at d=0.01, growing to -3.0 deg at d=0.10.
+At r=0.10, drift=0.10 pushes onset from +2 to -2 -- the only observed
+negative-angle IC onset in the dataset.  At N>=8 drift has negligible
+effect (mean shift 0.0 at all tested drifts except N=12/d=0.10 at
+-1.25).  At N=20 the boundary is completely drift-invariant across
+all tested values.  The boundary is thus drift-fragile at N=4 and
+drift-rigid at large N.
+
+CURVATURE.  Boundary curvature in the (angle, radius) plane is extreme
+at N=4 (mean kappa = 222 at d=0.0, peaking at 1000 at multiple radii)
+and identically zero at N>=8 at drift=0.  Drift=0.10 introduces
+nonzero curvature at N=12 (kappa=1000 at r=0.40) but not at N=20.
+Torsion (twist of the boundary into the drift dimension) is large at
+N=4 (mean |tau| = 6.8, max = 14), negligible at N=8 (0.0), small at
+N=12 (1.25), and zero at N=20.
+
+TEMPORAL GRADIENT AT BOUNDARY.  The chi ratio between IC and its
+non-IC neighbor is surprisingly close to 1.0 at all N: 0.8x at N=4
+and N=8, 0.9x at N=12.  This means the phase boundary is NOT a
+temporal cliff -- collapse time varies continuously across the IC/non-IC
+boundary.  The temporal discontinuity identified in the temporal
+manifold analysis (the +41 chi-unit jump at N=4/angle=0) is internal
+to the IC domain (between fast IC and DECAY), not at the IC/non-IC
+boundary itself.
+
+CONVERGENCE HIERARCHY.  The boundary geometry converges in the sequence:
+N=4 (folded, cusp-rich, drift-fragile, high-curvature, multi-connected)
+-> N=8 (flat, drift-rigid, zero-curvature, but patchy with radius gaps)
+-> N=12 (flat, nearly drift-rigid, contiguous except r=0.10-0.20)
+-> N=20 (flat, drift-invariant, contiguous except r=0.10).
+The overall picture is that the IC/non-IC boundary undergoes a
+topological simplification with N: it transforms from a complex folded
+surface at N=4 to a degenerate hyperplane at large N, with the
+transition occurring sharply between N=4 and N=8.

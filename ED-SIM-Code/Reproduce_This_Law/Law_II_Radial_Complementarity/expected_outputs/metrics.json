@@ -1,0 +1,7 @@
+{
+  "N3": {"ic_inward": 100.0, "ic_outward": 25.71, "comp_sum": 125.71, "note": "Law V outlier"},
+  "N4": {"ic_inward": 73.51, "ic_outward": 26.75, "comp_sum": 100.26},
+  "N5": {"ic_inward": 67.53, "ic_outward": 36.36, "comp_sum": 103.90},
+  "N6": {"ic_inward": 60.00, "ic_outward": 40.26, "comp_sum": 100.26},
+  "N7": {"ic_inward": 59.48, "ic_outward": 44.68, "comp_sum": 104.16}
+}

@@ -1,0 +1,42 @@
+NOTE -- Temporal Manifold Structure (chi_emp across N x angle x radius x drift)
+=================================================================================
+Date: 2026-03-15
+Script: check_temporal_manifold.py (11-section analysis)
+Data: 1,980 cells from existing 4D drift sweep files
+
+The temporal structure of the ED phase manifold exhibits a dramatic
+N-dependent compression.  Mean collapse time drops from 27.1 chi-units
+at N=4 to 0.20 at N=20 -- a 135-fold reduction -- with IC-specific
+scaling steeper than 1/N^2 (chi/N^2 collapses from 0.75 at N=4 to
+effectively zero at N=20).  The tangent discontinuity produces a sharp
+temporal jump only at N=4: at drift=0, the mean chi at angle=0 is 82.0
+versus 40.9 at angle=+1, a +41 chi-unit cliff driven by DECAY cells
+saturating the timeout ceiling at exactly 100.0.  This temporal cliff
+smooths monotonically with drift (dropping to +12.6 at d=0.02 and
+vanishing at d=0.05) and is entirely absent at N>=8, where the 0-to-+1
+degree transition produces chi jumps below 1.0 at all tested drifts.
+DECAY itself is a temporal step rather than a cliff: the DECAY/neighbor
+chi ratio is 2.1x (28 cells at timeout=100.0, neighbors at mean=47.6),
+indicating that the temporal boundary into DECAY is not infinitely
+sharp but rather a factor-of-two discontinuity embedded within the
+already-slow near-tangent region.  The N=8 anomaly has a distinctive
+temporal signature: its mean positive-angle chi (2.78) is seven times
+slower than N=12 (0.37) and fifteen times slower than N=20 (0.19), and
+this slow plateau is drift-invariant (remaining at 2.8 +/- 0.1 across
+all tested drifts).  The other-late mechanism at N=8 produces the
+slowest non-DECAY orbits (mean chi=4.24 at positive angles), acting as
+a temporal buffer between collapse and escape.  The slow manifold is
+spatially distributed at small N (spanning 5+ angles and 10 radii at
+N=4) but localizes at large N: at N=20, all 48 slow cells are OPBC
+events confined to radii 0.10 and 0.30, indicating that the slow
+manifold contracts to isolated radius-specific channels as the phase
+diagram flattens.  Temporal gradients are universally CLIFF-class at
+N=4 (max gradient ~92 chi-units across a single angle step),
+MODERATE at N=8 (~9), and GENTLE at N=20 (~1.3), with drift neither
+systematically smoothing nor sharpening these transitions.  Metastable
+regions (chi>5 near mechanism boundaries) are abundant at N=4 (239
+cells, mean chi=26.2), modest at N=8 (41 cells, mean chi=8.1), and
+effectively absent at N>=20.  The overall picture is that temporal
+complexity mirrors mechanism complexity: both are maximal at small N,
+collapse toward simple fast dynamics at large N, and the N=8 anomaly
+stands out as a plateau of unusually slow, mechanism-diverse orbits.

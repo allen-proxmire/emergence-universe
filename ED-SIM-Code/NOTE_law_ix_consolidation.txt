@@ -1,0 +1,35 @@
+NOTE -- Law IX Consolidation Sweep
+====================================
+
+The Law IX consolidation sweep extends the parameter space to 11,970 new
+(sweep + atlas) cells at non-canonical radii (0.025, 0.125, 0.275, 0.525,
+0.675, 0.825), non-canonical angles (+/-0.5, +/-3, +/-7 degrees), and
+non-canonical drifts (0.003, 0.007, 0.013, 0.017, 0.030), across all 14
+tested N values (4-128).  The corrected lambda -- defined as the PBC-aware
+initial d_min divided by the merge threshold -- now varies properly with N:
+lambda = 4.99 at N=4, 1.30 at N=8, 0.58 at N=12, and < 0.05 at N>=48.
+Lambda discriminates temporal regimes with near-perfect accuracy: 99.9% of
+cells with lambda < 1 have chi at the measurement floor (0.01), and 100% of
+cells with lambda > 5 have chi > 1.0.  The three Law IX regimes are confirmed
+at non-canonical parameters: N=4 produces 9 sub-types and DECAY (folded),
+N=8 sustains the 22.6% OL-wandering resonance (lambda ~ 1), and N>=48
+collapses to 6 sub-types with chi universally at floor (asymptotic).  The
+asymptotic hyperplane extends cleanly to non-canonical angles (+7, +3, +0.5
+all yield 100% IC at N>=32), non-canonical radii (IC confirmed at all 6 new
+radii for N>=48), and non-canonical drifts (d=0.003-0.030 produce identical
+outcomes at N>=48).  Taxonomy entropy converges with CV=9.9% for N>=20.
+
+Lambda's primary predictive power is regime-structural and temporal, not
+mechanism-specific.  The simple rule (positive angle -> IC, negative -> non-IC,
+zero -> other-late) predicts mechanism with 92.3% accuracy at positive angles
+for N>=20 but only 61.3% overall, because the boundary region near angle = 0
+and the complex N=4 regime resist single-parameter prediction.  The angle = -0.5
+boundary reveals that the true IC/non-IC transition at large N lies slightly
+below zero degrees, not at zero, with 33-68% IC rates persisting at -0.5 degrees
+across N=48-128.  The temporal scaling exponent on the extended dataset is -2.81
+(R^2=0.96), steeper than the canonical -2.33, reflecting the broader parameter
+coverage.  Drift rigidity increases monotonically from 25.5% (N=4, lambda~5) to
+82-83% (N>=40, lambda<0.1), with lambda bins confirming the transition: 33.3%
+rigid at lambda 3-8, 62.4% at lambda 1-3, 77.7% at lambda < 0.3.  Law IX is
+confirmed as governing the regime structure and temporal behavior of the unified
+manifold; the mechanism layer requires angle as a co-predictor alongside lambda.

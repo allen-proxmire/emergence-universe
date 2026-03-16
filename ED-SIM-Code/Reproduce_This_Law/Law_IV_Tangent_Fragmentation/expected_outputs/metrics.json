@@ -1,0 +1,17 @@
+{
+  "inward_N3":  {"ic_bands": 1, "max_width": 385, "pbc_corner": 0},
+  "inward_N4":  {"ic_bands": 1, "max_width": 283, "pbc_corner": 0},
+  "inward_N5":  {"ic_bands": 3, "max_width": 235, "pbc_corner": 0},
+  "inward_N6":  {"ic_bands": 1, "max_width": 231, "pbc_corner": 0},
+  "inward_N7":  {"ic_bands": 3, "max_width": 173, "pbc_corner": 0},
+  "tangent_N3": {"ic_bands": 1, "max_width": 166, "pbc_corner": 0},
+  "tangent_N4": {"ic_bands": 0, "max_width": 0,   "pbc_corner": 14},
+  "tangent_N5": {"ic_bands": 7, "max_width": 70,  "pbc_corner": 43},
+  "tangent_N6": {"ic_bands": 7, "max_width": 69,  "pbc_corner": 46},
+  "tangent_N7": {"ic_bands": 10, "max_width": 23, "pbc_corner": 28},
+  "outward_N3": {"ic_bands": 1, "max_width": 99,  "pbc_corner": 0},
+  "outward_N4": {"ic_bands": 1, "max_width": 103, "pbc_corner": 0},
+  "outward_N5": {"ic_bands": 2, "max_width": 138, "pbc_corner": 0},
+  "outward_N6": {"ic_bands": 1, "max_width": 155, "pbc_corner": 0},
+  "outward_N7": {"ic_bands": 2, "max_width": 171, "pbc_corner": 0}
+}

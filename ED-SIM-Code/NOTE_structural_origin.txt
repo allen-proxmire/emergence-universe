@@ -1,0 +1,30 @@
+NOTE -- Structural Origin Probe (Pre-Law IX)
+=============================================
+
+The structural origin probe analyses all 11,319 cells (N=4-128) to identify the
+mechanism behind the asymptotic convergence established by Law VIII and the
+High-N Asymptotic Probe.  Seven derived quantities--boundary curvature kappa_norm,
+torsion tau_norm, boundary-angle residual Delta_theta, chi residual Delta_chi,
+drift-rigidity index R_drift, taxonomy entropy H_sub, and manifold distance
+D(N)--reveal a clean two-stage transition.  Stage 1 (N=4 to 8) is a geometric
+snap: curvature, torsion, boundary multiplicity, and manifold distance all drop
+to exactly zero in a single step, driven by the collapse of inter-particle
+spacing below the merge threshold.  Stage 2 (N=8 to 32+) is a dynamical
+relaxation: chi decays as a power law (chi ~ N^(-2.33), R^2 = 0.978), taxonomy
+entropy converges (CV = 12.6% for N >= 20, tail mean 1.12), and drift rigidity
+locks to R_drift = 1.000 from N=8 onward.  The full asymptotic regime--where
+all seven criteria are simultaneously satisfied--switches on at N=48.
+
+The deeper invariant underlying both stages is lambda(N) = inter-particle
+spacing / merge threshold.  At N=4, lambda >> 1 and particles explore complex
+trajectories before merging; at N=8, lambda ~ 1 and the system sits at the
+unique resonance (22% OL-wandering, slow chi plateau); at N >= 20, lambda << 1
+and collapse is essentially instantaneous, leaving no room for geometric
+complexity.  The +10 deg onset angle is a grid-saturation artifact: +10 deg is
+the maximum positive angle in the measurement grid, and at large N the true IC
+boundary likely exceeds it.  The chi exponent -2.33 (approximately -7/3) arises
+from the interplay between N-dependent velocity normalisation and
+measurement-floor censoring at chi = 0.01.  Three N values (4, 8, 12) suffice
+to predict the entire asymptotic regime, confirming that the complexity-reduction
+flow of Law VIII is the trajectory through the lambda = 1 crossover from
+multi-mechanism diversity to instantaneous single-mechanism dominance.

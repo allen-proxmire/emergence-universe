@@ -1,0 +1,31 @@
+NOTE — High-N Asymptotic Probe
+================================
+
+The high-N probe extends the ED-Arch parameter space to N = 40, 48, 56, 64, 80,
+96, and 128, generating 2,079 new (sweep + atlas) cells at the canonical 9 angles,
+11 radii, and 3 drift values (0.00, 0.01, 0.02).  The system converges to a true
+asymptotic law.  The IC phase boundary is exactly planar from N=20 onward—onset
+angle is +10° at every radius and every drift, with zero curvature, zero torsion,
+and zero folds.  Collapse time chi follows a power-law decay chi ~ N^(−2.33)
+(R² = 0.978) and reaches the measurement floor (chi = 0.01, meaning collapse
+within a single timestep) at N=32; it remains at the floor for all N ≥ 48.  Drift
+becomes irrelevant at N ≥ 8: the onset angle is identical at drift = 0 and
+drift = 0.02, and the chi ratio between the two is exactly 1.000 for all N ≥ 32.
+DECAY remains strictly N=4-exclusive across all 14 tested N values.  The N=8
+resonance (22% OL-wandering, slow chi plateau) is the unique anomaly in the full
+N=4–128 range; no new resonances appear at any higher N.
+
+The taxonomy does not freeze to a single fixed set but oscillates within a narrow
+five-to-six-member band for all N ≥ 20.  The persistent core is {IC-direct,
+OPBC-single, IC-bounced, OPBC-glancing, OL-stalled}, with CR-diagonal and
+OPBC-winding appearing intermittently as geometric consequences of the
+ring-to-box ratio.  IC-direct stabilizes near 47% of all cells—it dominates but
+does not approach 100%, because the non-IC region (outward-PBC at negative angles,
+OL-stalled at angle = 0) is structurally protected by geometry.  IC-direct as a
+fraction of all IC cells stabilizes near 85–90%, with the residual IC-bounced
+population reflecting PBC interactions at large circumradius.  The IC fraction
+overall converges to approximately 46%, and the manifold's asymptotic form is a
+flat, drift-rigid, two-mechanism partition (IC vs. OPBC) with a minor OL-stalled
+fringe at angle = 0.  The five-manifold unified surface is, in the N → ∞ limit,
+an exactly planar, zero-curvature, zero-torsion, instantaneous-collapse slab
+bisected by a fixed boundary at onset angle = +10°.

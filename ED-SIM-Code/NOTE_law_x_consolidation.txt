@@ -1,0 +1,33 @@
+NOTE -- Law X Consolidation Sweep
+====================================
+
+The Law X consolidation sweep extends the parameter space to 11,102 new
+cells at boundary-layer angles (-0.75, -0.5, -0.25, +0.25, +0.75),
+beyond-grid angles (+12, +15), non-canonical radii (0.025, 0.125, 0.275,
+0.525, 0.675, 0.825), and non-canonical drifts (0.003, 0.007, 0.013,
+0.017, 0.030), across all 14 tested N values (4-128).  The angle partition
+is confirmed in the bulk: for N>=20 and |angle|>1, positive angles produce
+IC at 94.5% and negative angles produce non-IC at 96.7%.  Beyond-grid
+angles +12 and +15 behave identically to +10 (100% IC, chi at floor for
+N>=48), confirming no grid-saturation artifact.  The boundary layer
+(-1 <= angle <= +1) is a genuinely distinct dynamical regime: drift-induced
+mechanism flips are 4.9x more frequent than in the bulk (56% vs 11.5%),
+and boundary-layer drift rigidity plateaus at 38-47% while bulk rigidity
+reaches 98-100% for N>=40.  The true IC boundary is a diffuse transition
+zone centered near -0.25 to 0 degrees, not a sharp line at -0.5 degrees,
+with the -0.5 degree angle producing 40-48% IC at N>=48 across all tested
+radii and drifts.  The boundary location shifts slightly with radius,
+confirming that PBC geometry modulates the transition.
+
+Taxonomy freezes to 6 sub-types at N>=48 with no unexpected entries: IC-direct
+(56.2%), OPBC-single (22.6%), IC-bounced (7.7%), OL-stalled (6.7%),
+CR-diagonal (4.7%), OPBC-glancing (2.1%).  Taxonomy entropy converges with
+CV=9.5% for N>=20.  The (lambda, angle) joint prediction achieves 70.0%
+overall accuracy, rising to 82.8% in the asymptotic regime (lambda<0.3) and
+89.5% at N=128.  The residual 10-18% at large N comes primarily from the
+boundary layer and from radius-specific PBC effects that act as a weak third
+modulator.  In the folded and transitional regimes (lambda>1), accuracy drops
+to 33-43% because the rich N=4/N=8 dynamics resist two-parameter prediction.
+Law X is confirmed as governing the mechanism partition of the unified manifold
+in the asymptotic limit; the boundary layer is the acknowledged zone of
+stochasticity where angle alone does not determine outcome.

@@ -1,0 +1,27 @@
+NOTE — 3D Phase Manifold Structure (N x angle x radius)
+=========================================================
+Date: 2026-03-15
+Script: check_3d_manifold.py
+Data: n{N}_2d_angle_radius_grid.json (N=4,8,12,20), with provision for
+      per-point n{N}_angle_{label}_r{RRR}_sweep.json files at additional N.
+
+The phase boundary separating inward-collapse from PBC/OPBC-dominated
+regions forms a connected but topologically non-trivial surface in the
+three-dimensional (N, angle, radius) parameter space.  At N=4 and N=20
+the boundary is near-vertical in the angle-radius plane — the tangent
+discontinuity at 0-to-+1 degree persists across 92% and 68% of radii
+respectively, producing a clean vertical sheet.  At N=8 and N=12 the
+sheet is perforated: the IC onset angle varies from -10 to +10 degrees
+depending on radius, and 37-40% of radii show no IC at any sampled
+angle.  The N=8 anomaly is not a localized ridge but a broad plateau,
+covering 45% of the angle-radius plane with depressed IC and elevated
+other-late fractions.  DECAY occupies an isolated 1D filament in the
+full 3D volume: it appears only at (N=4, angle=exactly 0 degrees) and
+extends along the radius axis from r~0.07 to r~0.95, confirming its
+measure-zero character.  The manifold is heavily folded at small N —
+87% of radii at N=4 exhibit cusps where three or more mechanisms
+coexist in a single angular slice — but simplifies monotonically with
+increasing N, reaching near-binary (IC vs OPBC) partitioning at N=20
+with effectively zero folds.  The overall geometry is that of a
+crumpled sheet at small N that progressively flattens and stiffens
+with increasing particle count.
