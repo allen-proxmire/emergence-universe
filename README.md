@@ -92,4 +92,4 @@ ED‑SIM shows how a universe can acquire law without being given law.
 
 ---
 
-"The pattern does not make the pieces. The pattern is making pieces. Perpetually.
+"The pieces does not make the pattern. The pattern is making the pieces. Perpetually.
