@@ -6,6 +6,16 @@ ED‑SIM is not a model of our universe.
 It is a minimal laboratory where the architecture is known, the rules are explicit, and the emergence of law‑like behavior can be observed directly.
 
 ---
+# Takeaway
+What begins as an empirical catalog of distinct behaviors—such as continuous collapse "sheets," quantized timing "ladders," and resonant "DECAY islands" —is ultimately unified into a single mathematical manifold. By Law XIV, the entire ED-Arch universe is completely solved and reduced to a strict three-coordinate generative hierarchy.
+
+These three coordinates explain every possible collapse behavior. Because these three coordinates represent finite structural states (3 approach directions × 3 PBC modes × 3 trajectory regimes), their interaction generates exactly 10 distinct sub-mechanism types.
+
+The defining takeaway of the entire 14-law series is Law XIII (Generative Closure): the taxonomy of the ED-Arch manifold is definitively complete. No 11th mechanism can ever arise, because every possible combination of approach direction, periodic boundary interaction, and trajectory regime has been fully mapped and enumerated.
+
+ED-SIM successfully transitioned from a phenomenological model mapping strange behaviors into a unified mathematical theory where every mechanism, timeline, and transition is accounted for by geometry alone, leaving no empirical degrees of freedom. These three coordinates explain every possible collapse behavior. 
+
+---
 
 ## What This Repository Contains
 - **ED‑SIM‑Code/** — Python scripts that implement the event‑density merge rule, generate configurations, run sweeps, and reproduce the architectural motifs described in the ED‑SIM papers.
